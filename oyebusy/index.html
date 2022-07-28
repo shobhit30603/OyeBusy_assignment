@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- bootstarp icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <!-- fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+    <!-- animated on scroll  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- slick slider  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/imgs/icons/favicon-16x16.png" type="image/x-icon">
+    <title>OyeBusy</title>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <div class="row" id="header">
+        <div class="col-md-11 col-12 mx-auto">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/imgs/logo.svg" alt="Ouebusy" class="logo">
+                    </a>
+
+                    <i class="bi bi-geo-alt navbar-toggler " id="sd-location"></i>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <p id="location" class="p-0 m-0"> <i class="bi bi-geo-alt"></i> 1st Floor, H 356, Block B,
+                            Sector 22, Noida, Uttar Pradesh 201301 <i class="bi bi-chevron-down"></i></p>
+
+
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item ms-2">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link" href="#">Career</a>
+                            </li>
+
+                            <li class="nav-item dropdown ms-2">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My Account
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Sign Up</a></li>
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item ms-2">
+                                <a class="nav-link" href="#"><i class="bi bi-cart-fill"></i></a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link" href="#"><i class="bi bi-google-play"></i> Download</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+
+            <div class="searchBx mx-auto mb-3 d-sm">
+                <i class="bi bi-search"></i>
+                <input type="text" id="search" class="form-control py-2" placeholder=" Search for a service"
+                    tabindex="1">
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- main-header  -->
+    <div class="container-fluid p-0" id="mainHeader">
+        <div class="row">
+            <div class="col-md-6 col-12 p-3" id="mainHeader_left">
+                <h1 class="text-center mb-3">Home services,<br> on demand</h1>
+                <div class="search-container">
+                    <div class="searchBx mx-auto mb-1">
+                        <i class="bi bi-search"></i>
+                        <input type="text" id="search" class="form-control py-2" placeholder=" Search for a service"
+                            tabindex="1">
+                    </div>
+                    <p class="searchTerms m-0">Examples: <a href="#">Salon</a>, <a href="#"> Women’s hair</a>, <a
+                            href="#">Men’s grooming</a> & <a href="#">Many more</a>..</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 p-3 pb-0" id="mainHeader_right">
+                <h2 class="text-center">What are you looking for?</h2>
+                <div class="serviceList p-3">
+                    <div class="row">
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/salon.png" alt="">
+                                <p class="text-center mt-1 m-0">Salon at Home</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/elct.png" alt="">
+                                <p class="text-center mt-1 m-0">Electrician</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/plumber.png" alt="">
+                                <p class="text-center mt-1 m-0">Plumber</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/cctv.png" alt="">
+                                <p class="text-center mt-1 m-0">CCTV</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/ac.png" alt="">
+                                <p class="text-center mt-1 m-0">AC ServiceV</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/pnm.png" alt="">
+                                <p class="text-center mt-1 m-0">Packers & Movers</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/clean.png" alt="">
+                                <p class="text-center mt-1 m-0">Cleaning</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/paint.png" alt="">
+                                <p class="text-center mt-1 m-0">House Painting</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/home aplpncs.png" alt="">
+                                <p class="text-center mt-1 m-0">Home Appliances</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/pest control.png" alt="">
+                                <p class="text-center mt-1 m-0">Pest Control</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/disinfection.png" alt="">
+                                <p class="text-center mt-1 m-0">Disinfection</p>
+                            </a>
+                        </div>
+                        <div class="col-3 m-0 p-0">
+                            <a href="#" class="serviceItem py-3">
+                                <img src="assets/imgs/carpenter.png" alt="">
+                                <p class="text-center mt-1 m-0">Carpenter</p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="offers mt-4">
+                    <div class="offerItem me-3">
+                        <img src="assets/imgs/5.png" alt="">
+                    </div>
+                    <div class="offerItem me-3">
+                        <img src="assets/imgs/2.png" alt="">
+                    </div>
+
+                    <div class="offerItem me-3">
+                        <img src="assets/imgs/1.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="row my-5">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="trendingService mb-5">
+                    <h3 class="heading text-center" data-aos="fade-up">Trending Services</h3>
+                    <p class="sub-heading text-center" data-aos="fade-up" data-aos-delay="100">Premium Home Services</p>
+
+                    <div class="trend-service-list my-5 p-3">
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-3">
+                                <img src="assets/imgs/ac-service.png" alt="service">
+                                <p class="text-center mt-5 m-0">Air-Conditioner Services</p>
+                            </div>
+                        </a>
+
+
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-2">
+                                <img src="assets/imgs/acinstl.png" alt="service">
+                                <p class="text-center mt-5 m-0">AC Installation</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-2">
+                                <img src="assets/imgs/sofa.png" alt="service">
+                                <p class="text-center mt-5 m-0">Sofa Cleaning Service</p>
+                            </div>
+                        </a>
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-2">
+                                <img src="assets/imgs/home deep.png" alt="service">
+                                <p class="text-center mt-5 m-0">Home Deep Cleaning Service</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="m-3 d-lrg">
+                            <div class="trend-service-item p-3">
+                                <img src="assets/imgs/ac-service.png" alt="service">
+                                <p class="text-center mt-5 m-0">Air-Conditioner Services</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="trendingService mb-5">
+                    <h3 class="heading text-center" data-aos="fade-up">Same Day Services</h3>
+                    <p class="sub-heading text-center" data-aos="fade-up" data-aos-delay="100">Premium Home Services</p>
+
+                    <div class="trend-service-list my-5 p-3">
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-3">
+                                <img src="assets/imgs/Carpenter-PNG-Image.png" alt="service">
+                                <p class="text-center mt-5 m-0">Carpentery
+                                    Services</p>
+                            </div>
+                        </a>
+
+
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-2">
+                                <img src="assets/imgs/plumber m.png" alt="service">
+                                <p class="text-center mt-5 m-0">Plumbing
+                                    Services</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-2">
+                                <img src="assets/imgs/electrician-home-repair-.png" alt="service">
+                                <p class="text-center mt-5 m-0">Electrical Service</p>
+                            </div>
+                        </a>
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-2">
+                                <img src="assets/imgs/pngegg.png" alt="service">
+                                <p class="text-center mt-5 m-0">Painting Service</p>
+                            </div>
+                        </a>
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-3 d-lrg">
+                                <img src="assets/imgs/pest control - m.png" alt="service">
+                                <p class="text-center mt-5 m-0">Pest Control Services</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="health-promt p-3 mb-5" data-aos="fade-down">
+                    <h4 class="heading">100% Safe Services</h4>
+                    <div class="promt-details">
+                        <ul class="m-0 ps-3">
+                            <li class="mb-3">Masks</li>
+                            <li class="mb-3">Temperature Checks</li>
+                        </ul>
+
+                        <ul class="m-0 ps-3 ms-4">
+                            <li class="mb-3">Gloves</li>
+                            <li class="mb-3">Sanitized Tools</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="service-category mb-5">
+                    <h3 class="heading text-center" data-aos="fade-up">Professional Cleaning Services</h3>
+                    <p class="sub-heading text-center" data-aos="fade-up" data-aos-delay="100">Premium Home Services</p>
+
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="service-category mb-5">
+                    <h3 class="heading text-center" data-aos="fade-up">Most Used Services</h3>
+                    <p class="sub-heading text-center" data-aos="fade-up" data-aos-delay="100">Premium Home Services</p>
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid p-5 qualitySec mb-5">
+            <h5 class="qualityHeading text-center mb-3" data-aos="fade-down">Assured Peace of Mind</h5>
+
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto qualityList">
+                    <div class="qualityItem p-2">
+                        <img src="assets/imgs/icons/icon-1.png" alt="">
+                        <div class="qualty-item-info ms-2">
+                            <p class="qualty-item-heading m-0">High Quality Work</p>
+                            <p class="qualty-item-para m-0">Only authorized service experts and genuine spare parts and
+                                equipments</p>
+                        </div>
+                    </div>
+
+                    <div class="qualityItem p-2">
+                        <img src="assets/imgs/icons/icon-2.png" alt="">
+                        <div class="qualty-item-info ms-2">
+                            <p class="qualty-item-heading m-0">Hassle Free</p>
+                            <p class="qualty-item-para m-0">Sit back and relax. <br>
+                                We do all the work</p>
+                        </div>
+                    </div>
+
+                    <div class="qualityItem p-2">
+                        <img src="assets/imgs/icons/icon-3.png" alt="">
+                        <div class="qualty-item-info ms-2">
+                            <p class="qualty-item-heading m-0">Totally Cashless</p>
+                            <p class="qualty-item-para m-0">Pay online for Safe & Secure payment.
+                                Many benefits and offers available with online payment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="service-category mb-5">
+                    <h3 class="heading text-center" data-aos="fade-up">Trending Services</h3>
+                    <p class="sub-heading text-center" data-aos="fade-up" data-aos-delay="100">Premium Home Services</p>
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="service-category-item p-2">
+                                <div class="service-thumb p-3"></div>
+                                <p class="service-title text-center mt-2 mb-0">Professional Deep Cleaning</p>
+                                <p class="para text-center mb-0">For spring clean for end of lease clean</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="trendingService mb-5">
+                    <h3 class="heading text-center" data-aos="fade-up">Trending Services</h3>
+                    <p class="sub-heading text-center" data-aos="fade-up" data-aos-delay="100">Premium Home Services</p>
+
+                    <div class="trend-service-list my-5 p-3">
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-3">
+                                <img src="assets/imgs/washing-mch.png" alt="service">
+                                <p class="text-center mt-5 m-0">Washing Machine Repair</p>
+                            </div>
+                        </a>
+
+
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-2">
+                                <img src="assets/imgs/refrizator.png" alt="service">
+                                <p class="text-center mt-5 m-0">Refrigerator Repair / Service</p>
+                            </div>
+                        </a>
+
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-2">
+                                <img src="assets/imgs/microwave.png" alt="service">
+                                <p class="text-center mt-5 m-0">Microwave Repair</p>
+                            </div>
+                        </a>
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-2">
+                                <img src="assets/imgs/ro.png" alt="service">
+                                <p class="text-center mt-5 m-0">RO Service</p>
+                            </div>
+                        </a>
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-3">
+                                <img src="assets/imgs/led tv.png" alt="service">
+                                <p class="text-center mt-5 m-0">LED TV Repair</p>
+                            </div>
+                        </a>
+                        <a href="#" class="m-3">
+                            <div class="trend-service-item p-3">
+                                <img src="assets/imgs/ac-slim.png" alt="service">
+                                <p class="text-center mt-5 m-0">AC Services</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="container-fluid m-0 p-5 saleSec mb-5">
+            <div class="row">
+                <div class="col-md-10 col-12 mx-auto">
+                    <div class="saleInfo ms-auto ps-2">
+                        <h5 class="text-center">TRY OUR TRENDING SERVICES WITH UPTO 50% OFF!</h5>
+                        <div class="salePara mb-3">
+                            <div class="bar"></div>
+                            <p class="m-0 text-center mx-3">On any service you book</p>
+                            <div class="bar"></div>
+                        </div>
+
+                        <a href="#" class="sale-cta mx-auto">book a Service</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- services by type 1 -->
+
+        <div class="container-fluid p-3 mb-5">
+            <div class="service-type-list p-5">
+
+                <div class="service-type-details">
+                    <h6 class="heading m-0">Electrician Services</h6>
+                    <p class="para m-0">Premium Services</p>
+                </div>
+
+                <div class="trend-service-list me-4" id="trnd-service-1">
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/mcb___fuse.png" alt="service">
+                            <p class="text-center mt-5 m-0">MCB & Fuse</p>
+                            <div class="para text-center m-0 w-100">Repairing & Installation</div>
+                        </div>
+                    </a>
+
+
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/switches___sockets.png" alt="service">
+                            <p class="text-center mt-5 m-0">Switch & Socket</p>
+                            <div class="para text-center m-0 w-100">Shower, Faucets & Holder Installation & Repair</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/wiring.png" alt="service">
+                            <p class="text-center mt-5 m-0">Wiring</p>
+                            <div class="para text-center m-0 w-100">Toilet pot, Sink, Bathroom, Balcony pipe</div>
+                        </div>
+                    </a>
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/appliance.png" alt="service">
+                            <p class="text-center mt-5 m-0">Appliances</p>
+                            <div class="para text-center m-0 w-100">Painting, Clock & Photoframe</div>
+                        </div>
+                    </a>
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/chandelier.png" alt="service">
+                            <p class="text-center mt-5 m-0">Chandelier</p>
+                            <div class="para text-center m-0 w-100">Holder, Hanger, Rod Installation</div>
+                        </div>
+                    </a>
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/door_bell.png" alt="service">
+                            <p class="text-center mt-5 m-0">Door Bell</p>
+                            <div class="para text-center m-0 w-100">Bed, Table, Rack & Cabinet</div>
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- services by type 2 -->
+
+        <div class="container-fluid p-3 mb-5">
+            <div class="service-type-list p-5">
+
+                <div class="service-type-details">
+                    <h6 class="heading m-0">Plumber
+                        Services</h6>
+                    <p class="para m-0">Premium Services</p>
+                </div>
+
+                <div class="trend-service-list me-4" id="trnd-service-2">
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Basin___sink.png" alt="service">
+                            <p class="text-center mt-5 m-0">Wash Basin & Sink</p>
+                            <div class="para text-center m-0 w-100">Repairing & Installation</div>
+                        </div>
+                    </a>
+
+
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Bath_fittings.png" alt="service">
+                            <p class="text-center mt-5 m-0">Bath Fittings</p>
+                            <div class="para text-center m-0 w-100">Shower, Faucets & Holder Installation & Repair</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3" id="service-type">
+                            <img src="assets/imgs/Blockage.png" alt="service">
+                            <p class="text-center mt-5 m-0">Blockage</p>
+                            <div class="para text-center m-0 w-100">Toilet pot, Sink, Bathroom, Balcony pipe</div>
+                        </div>
+                    </a>
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Drill___hang.png" alt="service">
+                            <p class="text-center mt-5 m-0">Drill & Hole</p>
+                            <div class="para text-center m-0 w-100">Painting, Clock & Photoframe</div>
+                        </div>
+                    </a>
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Minor_installations.png" alt="service">
+                            <p class="text-center mt-5 m-0">Minor Installations</p>
+                            <div class="para text-center m-0 w-100">Holder, Hanger, Rod Installation</div>
+                        </div>
+                    </a>
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Tap.png" alt="service">
+                            <p class="text-center mt-5 m-0">Mixer, Tap & Nozzle</p>
+                            <div class="para text-center m-0 w-100">Bed, Table, Rack & Cabinet</div>
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- services by type 3 -->
+
+        <div class="container-fluid p-3 mb-5">
+            <div class="service-type-list p-5">
+
+                <div class="service-type-details">
+                    <h6 class="heading m-0">Carpenter Services</h6>
+                    <p class="para m-0">Premium Services</p>
+                </div>
+
+                <div class="trend-service-list me-4" id="trnd-service-3">
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Bed.png" alt="service">
+                            <p class="text-center mt-5 m-0">Bed</p>
+                            <div class="para text-center m-0 w-100">Repairing Support, Legs</div>
+                        </div>
+                    </a>
+
+
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Curtain___Blinds.png" alt="service">
+                            <p class="text-center mt-5 m-0">Curtain & Blinds</p>
+                            <div class="para text-center m-0 w-100">Motorized, Non-Motorized Blinds & Curtain Rod</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/door 1.png" alt="service">
+                            <p class="text-center mt-5 m-0">Door</p>
+                            <div class="para text-center m-0 w-100">Repairing, Accessories Installation</div>
+                        </div>
+                    </a>
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Drawer_&_cupboard.png" alt="service">
+                            <p class="text-center mt-5 m-0">Drawer & Cupboard</p>
+                            <div class="para text-center m-0 w-100">Channel, Hinge Repair</div>
+                        </div>
+                    </a>
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Fitting___minor_installations.png" alt="service">
+                            <p class="text-center mt-5 m-0">Fittings & Installations</p>
+                            <div class="para text-center m-0 w-100">Holder, Hanger, Rod Installation</div>
+                        </div>
+                    </a>
+                    <a href="#" class="m-3">
+                        <div class="trend-service-item service-type-item p-3">
+                            <img src="assets/imgs/Furniture_assembly.png" alt="service">
+                            <p class="text-center mt-5 m-0">Furniture Assembly</p>
+                            <div class="para text-center m-0 w-100">Bed, Table, Rack & Cabinet</div>
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="container-fluid m-0 p-5 mb-5 why-us">
+            <div class="why-us-details py-3 px-5 ms-auto">
+                <h6>Why People Choose Us</h6>
+
+                <ul>
+                    <li>Affordable Rates</li>
+                    <li>On Time Service</li>
+                    <li>Verified Professionals</li>
+                    <li>Excellent Service</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <!-- reviews  -->
+        <div class="row mb-5">
+            <div class="col-md-10 col-12 mx-auto">
+                <h5 class="heading text-center" data-aos="fade-up">What our customers say</h5>
+
+                <div class="row mt-5">
+                    <div class="col-md-3 col-12" data-aos="flip-left" data-aos-delay="50">
+                        <div class="review-item p-3">
+                            <i class="bi bi-quote"></i>
+                            <p class="review-msg m-0">
+                                Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                cursus eleifend augue volutpat hendrerit.
+                            </p>
+                            <p class="review-user mt-2 m-0">Ritu Kumar</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-12 " data-aos="flip-right" data-aos-delay="50">
+                        <div class="review-item p-3">
+                            <i class="bi bi-quote"></i>
+                            <p class="review-msg m-0">
+                                Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                cursus eleifend augue volutpat hendrerit.
+                            </p>
+                            <p class="review-user mt-2 m-0">Ritu Kumar</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 " data-aos="flip-left" data-aos-delay="50">
+                        <div class="review-item p-3">
+                            <i class="bi bi-quote"></i>
+                            <p class="review-msg m-0">
+                                Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                cursus eleifend augue volutpat hendrerit.
+                            </p>
+                            <p class="review-user mt-2 m-0">Ritu Kumar</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 " data-aos="flip-right" data-aos-delay="50">
+                        <div class="review-item p-3">
+                            <i class="bi bi-quote"></i>
+                            <p class="review-msg m-0">
+                                Speaker/View Details Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                cursus eleifend augue volutpat hendrerit.
+                            </p>
+                            <p class="review-user mt-2 m-0">Ritu Kumar</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid m-0 p-5 mb-5 app-sec">
+            <div class="app-details">
+
+                <div class="news-letter py-3 px-5">
+                    <p class="m-0" data-aos="fade-up">Refer and or get link</p>
+                    <p class="news-letter-msg">Invite your friends</p>
+
+                    <div class="email-input mb-4">
+                        <input type="text" class="form-control" placeholder="Enter your 10 digit mobile number">
+                        <i class="bi bi-arrow-right news-letter-arrow p-1"></i>
+                    </div>
+
+                    <div class="app-link d-flex">
+                        <a href="#">
+                            <img src="assets/imgs/google-play-badge 2.png" alt="google-play">
+                        </a>
+                        <a href="#" class="ms-3">
+                            <img src="assets/imgs/apple-store.png" alt="apple-store">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="app-imgs ms-5 py-3 px-5">
+                    <img src="assets/imgs/app_phon 2.png" alt="" class="me-5">
+                    <img src="assets/imgs/app_phon -1.png" alt="">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="stamp-sec d-flex align-items-center mb-5">
+            <img src="assets/imgs/stamp.png" alt="">
+            <p class="text-center m-0 mx-5">Hassle free services with <br> OyeBusy</p>
+        </div>
+
+    </main>
+
+    <footer class="p-5" id="footer">
+        <div class="ft-bx mb-5">
+            <p class="me-4 m-0">RELATED SERVICES</p>
+
+            <div class="ft-item ms-4">
+                <a href="#">Electrician</a> |
+                <a href="#">Plumber</a> | <a href="#">Carpenter</a> | <a href="#">Packers</a> & Movers | <a
+                    href="#">Salon</a> For Woman | <a href="#">Salon</a> For Man | <a href="#">Electronic</a> |
+                <a href="#">Appliances</a> | <a href="#">CCTV Installation & Repair</a> | <a href="#">Ro- repair &
+                    service</a> | <a href="#">house Painter</a> | <a href="#">Pest Control</a> | <a href="#">Kitchen
+                    Cleaning</a> |
+                <a href="#">Bathroom Cleaning</a> | <a href="#">Sofa Cleaning</a> | <a href="#">Carpet Cleaning</a> | <a
+                    href="#">Home Deep Cleaning</a>
+            </div>
+        </div>
+        <div class="ft-bx mb-5">
+            <p class="me-4 m-0">TOP LOCATIONS</p>
+
+            <div class="ft-item ms-4">
+
+                <a href="#">Delhi </a> |
+                <a href="#">Gurgaon</a> | <a href="#">Noida</a> | <a href="#">Ghaziabad</a> Faridhabad | <a
+                    href="#">Greater Noida</a>
+            </div>
+        </div>
+
+        <ul class="d-flex short-links list-unstyled">
+            <li><a href="#"> About Us</a></li>
+            <li><a href="#"> Blog</a></li>
+            <li><a href="#"> Near Me</a></li>
+            <li><a href="#"> Careers</a></li>
+            <li><a href="#"> Terms & Conditions</a></li>
+            <li><a href="#"> Privacy Policy</a></li>
+            <li><a href="#"> Offers & Gift Cards</a></li>
+            <li><a href="#"> Contact Us</a></li>
+        </ul>
+
+        <div class="also-links my-5">
+            <div class="contact-link">
+                <p>Contact Us</p>
+
+                <ul class="m-0 p-0 list-unstyled">
+                    <li class="text-light">Phone : <a href="tel:+91 9990001089">+91 9990001089</a></li>
+                    <li class="text-light">Email : <a href="mailto:support@oyebusy.com">support@oyebusy.com</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-link ms-5">
+                <p>Download Oyebusy App</p>
+
+                <div class="app-link d-flex">
+                    <a href="#">
+                        <img src="assets/imgs/google-play-badge 2.png" alt="google-play">
+                    </a>
+                    <a href="#" class="ms-3">
+                        <img src="assets/imgs/apple-store.png" alt="apple-store">
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <ul class="social d-flex m-0 p-0 list-unstyled">
+            <li class="me-4"><a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a></li>
+            <li class="me-4"><a href="#">
+                    <i class="bi bi-twitter"></i>
+                </a></li>
+            <li class="me-4"><a href="#">
+                    <i class="bi bi-linkedin"></i>
+                </a></li>
+            <li class="me-4"><a href="#">
+                    <i class="bi bi-facebook"></i>
+                </a></li>
+            <li class="me-4"><a href="#">
+                    <i class="bi bi-youtube"></i>
+                </a></li>
+            <li class="me-4"><a href="#">
+                    <i class="bi bi-pinterest"></i>
+                </a></li>
+
+        </ul>
+
+        <p class="para text-center mt-2">© 2022 OyeBusy Technologies Pvt. Ltd. Developed by <a href="#">Subhankar
+                Sarkar</a></p>
+
+    </footer>
+
+    <!-- responsive Navabr  -->
+    <div class="sd-nav py-2 ">
+        <ul class="list-unstyled m-0 p-0">
+            <li class="px-2 ">
+                <a href="#">
+                    <i class="bi bi-house-fill sd-active"></i>
+                    <p class="m-0 sd-active">Home</p>
+                </a>
+            </li>
+            <li class="px-2">
+                <a href="#">
+                    <i class="bi bi-bookmark-plus"></i>
+                    <p class="m-0">Booking</p>
+                </a>
+            </li>
+            <li class="px-2">
+                <a href="#">
+                    <i class="bi bi-heart"></i>
+                    <p class="m-0">Favourite</p>
+                </a>
+            </li>
+            <li class="px-2">
+                <a href="#">
+                    <i class="bi bi-person-circle"></i>
+                    <p class="m-0">Accounts</p>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- location modal  -->
+
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Add New Address</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post">
+                        <input type="tel" name="contact" class="form-control mb-3" placeholder="Contact">
+                        <input type="text" name="area" class="form-control mb-3" placeholder="Area">
+                        <textarea name="address" cols="30" rows="2" class="form-control"
+                            placeholder="Address"></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
